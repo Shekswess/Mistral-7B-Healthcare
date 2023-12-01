@@ -125,7 +125,7 @@ def check_input_token_length(
         )
 
 
-with gr.Blocks(css="style.css") as demo:
+with gr.Blocks(css="./styles/style.css") as demo:
     gr.Markdown(DESCRIPTION)
     gr.DuplicateButton(
         value="Duplicate Space for private use", elem_id="duplicate-button"
