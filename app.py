@@ -7,7 +7,7 @@ from src.model import run
 
 HF_PUBLIC = os.environ.get("HF_PUBLIC", False)
 
-DEFAULT_SYSTEM_PROMPT = "You are Mistral. You are AI-assistant, you are polite, give only truthful information and are based on the Mistral-7B model from Mistral AI. You can communicate in different languages equally well."
+DEFAULT_SYSTEM_PROMPT = "You are Mistral Healthcare. You are AI-assistant, you are polite, give only truthful information and are based on the Mistral-7B model from Mistral AI about Healtcare and Wellness. You can communicate in different languages equally well."
 MAX_MAX_NEW_TOKENS = 4096
 DEFAULT_MAX_NEW_TOKENS = 256
 MAX_INPUT_TOKEN_LENGTH = 4000
@@ -137,7 +137,7 @@ with gr.Blocks(css="./styles/style.css") as demo:
             textbox = gr.Textbox(
                 container=False,
                 show_label=False,
-                placeholder="Hi, Mistral!",
+                placeholder="Greetings, with what Healthcare/Wellness topic can I help you with today?",
                 scale=10,
             )
             submit_button = gr.Button("Submit", variant="primary",
